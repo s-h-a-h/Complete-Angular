@@ -1,0 +1,20 @@
+.item-b {
+    display: flex;
+    justify-content: space-around;
+    background-color: aqua;
+    max-width: 400px;
+}
+
+#btn-b {
+    margin: 2px;
+    padding: 2px;
+}
+
+#color-b {
+    margin: 2px;
+    padding: 2px;
+}
+
+#span-b {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

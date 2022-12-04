@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./item-b.component.css']
 })
 export class ItemBComponent {
-
+  name = "ItemBComponent";
+  whichColor = (): string => {
+    return "Aqua";
+  }
 }
