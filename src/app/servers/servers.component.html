@@ -1,3 +1,20 @@
-<app-server></app-server>
+<!-- <app-server></app-server> -->
 <!-- property binding -->
-<button class="button" [disabled]="!allowNewServer">Add Server</button>
+<!-- <button class="button" [disabled]="!allowNewServer" (click)="onCreateServer()">Add Server</button> -->
+<!-- String interpolation vs property binding
+<p>{{allowNewServer}}</p> -->
+<!-- <p [innerText]="allowNewServer"></p> -->
+<!-- Event binding -->
+<div class="smile">
+    <p id="text">{{action}}</p>
+    <div class="button-container">
+        <button id="btn-1" (click)="onClickStatusSmile()">SMILE</button>
+        <button id="btn-2" (click)="onClickStatusSad()">SAD</button>
+        <button id="btn-3" (click)="onClickStatusCry()">CRY</button>
+        <button id="btn-4" (click)="onClickStatusLaugh()">LAUGH</button>
+        <button id="btn-5" (click)="onClickStatusWink()">WINK</button>
+        <button id="btn-6" (click)="onClickStatusHeart()">HEART</button>
+        <button id="btn-7" (click)="onClickStatusLike()">LIKE</button>
+    </div>
+    <span id="smiley-emoji">{{emojiStatus}}</span>
+</div>
