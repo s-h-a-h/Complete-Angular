@@ -63,3 +63,9 @@
     font-weight: 500;
     height: 48px;
 }
+
+#ser-status {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+}
