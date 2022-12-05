@@ -7,6 +7,7 @@ import { ItemAComponent } from './body/item-a/item-a.component';
 import { ItemBComponent } from './body/item-b/item-b.component';
 import { BodyComponent } from './body/body.component';
 import { ServerComponent } from './server/server.component';
+import { ServersComponent } from './servers/servers.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { ServerComponent } from './server/server.component';
     ItemAComponent,
     ItemBComponent,
     BodyComponent,
-    ServerComponent
+    ServerComponent,
+    ServersComponent
   ],
   imports: [
     BrowserModule,
