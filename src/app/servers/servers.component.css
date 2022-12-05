@@ -3,36 +3,39 @@
     flex-direction: column;
     align-items: center;
     background-color: aquamarine;
-    height: 630px;
+    height: 500px;
 }
 
-#text{
+#text {
     font-size: 30px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-#status{
+
+#status {
     font-size: medium;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-#smiley-emoji{
+#smiley-emoji {
     margin-top: 50px;
     font-size: 100px;
 }
 
-/* .button-container{
-    display: flex;
-    justify-content: space-between;
-}  */
-
-.button-container{
+.button-container {
     margin-top: 30px;
     width: 1200px;
     height: 50px;
     display: flex;
     justify-content: space-around;
 }
-#btn-1, #btn-2, #btn-3, #btn-4, #btn-5, #btn-6, #btn-7{
+
+#btn-1,
+#btn-2,
+#btn-3,
+#btn-4,
+#btn-5,
+#btn-6,
+#btn-7 {
     width: 100px;
     height: 40px;
     border: none;
@@ -45,7 +48,7 @@
 #btn-4,
 #btn-5,
 #btn-6,
-#btn-7{
+#btn-7 {
     align-items: center;
     appearance: none;
     background-color: #fff;
@@ -60,4 +63,3 @@
     font-weight: 500;
     height: 48px;
 }
-
