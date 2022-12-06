@@ -1,4 +1,27 @@
-<div class="server">
-    <span id="span-1" [ngStyle]="{backgroundColor: getColor()}"> Server name is {{name1}}, Active status: {{getServerStatus()}}</span>
-    <!-- <button (click)="toggleStatus()">Toggle status</button> -->
+<!-- 4 types of binding -->
+<!-- -------------------- -->
+<!-- 1. String Interpolation -->
+<div class="string-intpol">
+    <!-- a) via variable -->
+    <p id="wish">{{timeStatus}}{{userName}}, have a good day.</p>
+    <!-- b) via function call  -->
+    <p id="wish">{{getTimeStatus()}}{{getUserName()}}, have a good night.</p>
+
 </div>
+<!-- 2. Property binding -->
+<div class="property-binding">
+    <button id="btn" [disabled]="isDisable">After 2 sec</button>
+</div>
+
+<!-- 3. Event binding -->
+
+<button id="btn" (click)="onClick()">CLICK</button>
+<p id="wish">{{text}}</p>
+<!-- Passing and using data with event binding -->
+<input type="text" (input)="onInput($event)">
+<p>{{inputText}}</p>
+
+<!-- 4. Two way binding -->
+
+<input type="text" [(ngModel)]="twoWay">
+<p id="wish">{{twoWay}}</p>
