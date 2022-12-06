@@ -31,7 +31,3 @@
 
 <input type="text" [(ngModel)]="userInput">
 <button (click)="onClick()">Submit</button>
-<span *ngIf="display; else noServer">{{userInput}} is added.</span>
-<ng-template #noServer>
-    <span>No server was created!</span>
-</ng-template>
