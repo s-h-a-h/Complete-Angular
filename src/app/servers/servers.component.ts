@@ -54,5 +54,9 @@ export class ServersComponent {
     this.action = "Liking..";
 
   }
+  ServerName = "";
+  onUpdateServerName = (event:any) => {
+    this.ServerName = event.target.value;
+  }
   
 }
