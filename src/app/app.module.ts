@@ -9,7 +9,7 @@ import { FormsModule } from '@angular/forms';
 import { SuccessComponent } from './practise/success/success.component';
 import { WarningComponent } from "./practise/warning/warning.component";
 import { DbComponent } from "./practise-databinding/db.component";
-import { DirectComponent } from './directives/direct/direct.component';
+import { DirectComponent } from './direct/direct.component';
 
 @NgModule({
   declarations: [
