@@ -1,1 +1,6 @@
-<p>direct works!</p>
+<!-- ngIf yo output data conditionally -->
+<div class="container">
+    <input type="text" [(ngModel)]="serverName">
+    <p id="para" *ngIf="serverCreated">Server is created. Server name is {{serverName}}</p>
+</div>
+<button id="btn" (click)="onClick()">Add Server</button>

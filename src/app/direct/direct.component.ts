@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./direct.component.css']
 })
 export class DirectComponent {
-
+  serverName = "";
+  serverCreated = false;
+  onClick = () => {
+    if (this.serverName.length > 0) {
+      this.serverCreated = true;
+    }
+  }
 }
