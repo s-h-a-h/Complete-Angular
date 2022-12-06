@@ -55,8 +55,12 @@ export class ServersComponent {
 
   }
   ServerName = "";
-  onUpdateServerName = (event:any) => {
-    this.ServerName = event.target.value;
+  // onUpdateServerName = (event:any) => {
+  //   this.ServerName = event.target.value;
+  // }
+
+  onUpdateServerName = (event: Event) => {
+    this.ServerName = (<HTMLInputElement>event.target).value;
   }
   
 }
