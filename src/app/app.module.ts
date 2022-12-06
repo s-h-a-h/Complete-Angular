@@ -9,6 +9,7 @@ import { FormsModule } from '@angular/forms';
 import { SuccessComponent } from './practise/success/success.component';
 import { WarningComponent } from "./practise/warning/warning.component";
 import { DbComponent } from "./practise-databinding/db.component";
+import { DirectComponent } from './directives/direct/direct.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { DbComponent } from "./practise-databinding/db.component";
     ServersComponent,
     SuccessComponent,
     WarningComponent,
-    DbComponent
+    DbComponent,
+    DirectComponent
   ],
   imports: [
     BrowserModule,
