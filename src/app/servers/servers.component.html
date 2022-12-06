@@ -1,4 +1,5 @@
 <app-server></app-server>
+<app-server></app-server>
 <!-- property binding -->
 <input id="text-input" type="text" [(ngModel)]="ServerName">
 <button class="button" [disabled]="!allowNewServer" (click)="onCreateServer()">Add Server</button>
@@ -30,4 +31,7 @@
 
 <input type="text" [(ngModel)]="userInput">
 <button (click)="onClick()">Submit</button>
-<span *ngIf="display">{{userInput}} is added.</span>
+<span *ngIf="display; else noServer">{{userInput}} is added.</span>
+<ng-template #noServer>
+    <span>No server was created!</span>
+</ng-template>

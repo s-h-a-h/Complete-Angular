@@ -1,6 +1,4 @@
 <div class="server">
-    <span id="span-1"> Server name is {{name1}}, Active status: {{status1}}</span>
-    <span id="span-2"> Server name is {{name2}}, Active status: {{status2}}</span>
-    <span id="span-3"> Server name is {{name3}}, Active status: {{status3}}</span>
-    <button (click)="toggleStatus()">Toggle status</button>
+    <span id="span-1" [ngStyle]="{backgroundColor: getColor()}"> Server name is {{name1}}, Active status: {{getServerStatus()}}</span>
+    <!-- <button (click)="toggleStatus()">Toggle status</button> -->
 </div>
