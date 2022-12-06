@@ -6,8 +6,14 @@
     height: 400px;
 }
 
-#text {
+#text{
     font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+#label{
+    font-size: 20px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -27,6 +33,11 @@
     height: 50px;
     display: flex;
     justify-content: space-around;
+}
+
+#text-input{
+    height: 20px;
+    width: 80px;
 }
 
 #btn-1,
