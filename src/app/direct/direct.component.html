@@ -10,4 +10,7 @@
 <button id="btn" (click)="onClick()">Add Server</button>
 
 <!-- Styling elements dynamically using "ngStyle" -->
-<p id="para" [ngStyle]="{backgroundColor: getColor()}">Server status is {{getServerStatus()}}</p>
+<!-- Applied CSS classes dynamically with ngClass -->
+<p id="para" [ngStyle]="{backgroundColor: getColor()}" [ngClass]="{'online': serverStatus === 'online' }">
+    Server status is {{getServerStatus()}}
+</p>
