@@ -1,9 +1,10 @@
 <app-server></app-server>
 <!-- property binding -->
+<input id="text-input" type="text" [(ngModel)]="ServerName">
 <button class="button" [disabled]="!allowNewServer" (click)="onCreateServer()">Add Server</button>
 <!-- String interpolation vs property binding -->
-<p>{{allowNewServer}}</p>
-<p [innerText]="allowNewServer"></p>
+<!-- <p>{{allowNewServer}}</p> -->
+<!-- <p [innerText]="allowNewServer"></p> -->
 <p id="ser-status">{{serverStatus}}</p>
 <!-- Event binding -->
 <div class="smile">
@@ -25,5 +26,4 @@
 
 <!-- Two way data binding using ngModel -->
 
-<label id="label">{{ServerName}}</label>
-<input id="text-input" type="text" [(ngModel)]="ServerName">
+<!-- <label id="label">{{ServerName}}</label> -->

@@ -6,6 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./servers.component.css']
 })
 export class ServersComponent {
+  ServerName = "";
   allowNewServer = false;
   action = "MAKE ME SMILE";
 
@@ -16,7 +17,7 @@ export class ServersComponent {
   }
   serverStatus = "Server is not yet created";
   onCreateServer = () => {
-    this.serverStatus = "Server Created 😊"
+    this.serverStatus = `Server Created 😊. Server name is ${this.ServerName}`
   }
   emojiStatus = "";
 
@@ -54,7 +55,6 @@ export class ServersComponent {
     this.action = "Liking..";
 
   }
-  ServerName = "";
   // onUpdateServerName = (event:any) => {
   //   this.ServerName = event.target.value;
   // }
