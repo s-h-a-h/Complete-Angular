@@ -1,0 +1,5 @@
+<div class="input-container">
+    <input id="input-text" type="text" [(ngModel)]="userName">
+    <p id="input-para">{{userName}}</p>
+</div>
+<button id="btn" [disabled]="!clickAllowed()" (click)="onClick()">Submit</button>
