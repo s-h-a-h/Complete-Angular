@@ -27,3 +27,7 @@
 <!-- Two way data binding using ngModel -->
 
 <!-- <label id="label">{{ServerName}}</label> -->
+
+<input type="text" [(ngModel)]="userInput">
+<button (click)="onClick()">Submit</button>
+<span *ngIf="display">{{userInput}} is added.</span>

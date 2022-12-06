@@ -59,8 +59,19 @@ export class ServersComponent {
   //   this.ServerName = event.target.value;
   // }
 
-  onUpdateServerName = (event: Event) => {
-    this.ServerName = (<HTMLInputElement>event.target).value;
+  userInput = "";
+  display = false;
+  // displayValue = `${this.userInput} is added!`;
+  onClick = () => {
+    if (this.userInput == "nginx") {
+      this.display = true;
+    }
+    // console.log(typeof (this.userInput));
+    // console.log(this.userInput);
+    // console.log(this.userInput == "nginx");
+    
+    
+    
   }
   
 }
